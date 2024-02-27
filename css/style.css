@@ -1,0 +1,656 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #1C2C40;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 400;
+}
+input,textarea,select{
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-weight: 400;
+}
+
+a{
+	color: #1C2C40;
+}
+a:hover,.submit:hover{
+	filter: alpha(opacity = 85);
+	-moz-opacity: 0.85;
+	-khtml-opacity: 0.85;
+	opacity: 0.85;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}buttonp{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: "GT-Eesti", Arial;
+	font-weight: 400;
+}
+.hidden{
+	display:none;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Regular.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Medium.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal
+}
+::placeholder {
+  color: #C0CCDA;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #C0CCDA;
+}
+
+::-ms-input-placeholder {
+  color: #C0CCDA;
+}
+
+:root {
+  --main-bg-color: #23D3D3;
+  --main-heading-color:#1C2C40;
+}
+
+header {}
+
+header section.wrapper{
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header section.wrapper div.left{
+	display: flex;
+	justify-content: start;
+}
+
+header section.wrapper div.left h1{
+	width: 100px;
+	margin-right: 16px;
+}
+
+header section.wrapper div.left h1 a{
+	width: 100%;
+	display: block;
+}
+
+header section.wrapper div.left h1 a img{
+	width: 100%;
+	display: block;
+}
+
+header section.wrapper div.left ul {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+
+header section.wrapper div.left ul li{
+	margin-right: 24px;
+}
+
+header section.wrapper div.left ul li a{}
+
+header section.wrapper div.right{}
+
+header section.wrapper div.right ul{
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+
+header section.wrapper div.right ul li{
+	margin-right: 24px;
+}
+
+header section.wrapper div.right ul li a{}
+
+
+header section.wrapper div.right ul li:last-child{
+	margin-right: 0;
+	padding: 8px 16px;
+	background: var(--main-bg-color);
+	border-radius: 24px;
+}
+
+header section.wrapper div.right ul li:last-child a {
+	color: white;
+}
+
+#home {
+	height: calc(100vh - 70px);
+	background: url(../images/bg.jpg) no-repeat 600px 50px;
+	background-size: contain;
+}
+
+#home section.wrapper{}
+
+#home section.wrapper h1{
+	padding-top: 120px;
+	font-size: 56px;
+	font-weight: 700;
+	margin-bottom: 16px;
+}
+
+#home section.wrapper p{
+	font-size: 18px;
+	margin-bottom: 32px;
+}
+
+#home section.wrapper a.button{
+	background: var(--main-bg-color);
+	padding: 16px 24px;
+	border-radius: 24px;
+	color: #fff;
+}
+
+#home section.wrapper p.two{
+	margin-top: 32px;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+}
+
+#home section.wrapper p.two img{
+	margin-left: 16px;
+}
+#service{
+padding: 120px;
+background: url(../images/whatis-bg.jpg) no-repeat 690px 500px;
+background-size: 65%;
+}
+#service section.wrapper{
+
+}
+#service section.wrapper div.top{
+	text-align: center;
+}
+#service section.wrapper div.top div{
+margin-bottom: 24px;
+}
+#service section.wrapper div.top div img{
+	box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+	padding: 6px;
+	border-radius: 50%;
+}
+#service section.wrapper div.top p{
+font-size: 18px;
+margin-bottom: 32px;
+}
+#service section.wrapper div.top h1{
+font-size: 56px;
+font-weight: 700;
+margin-bottom: 60px;
+}
+#service section.wrapper div.bottom{
+
+}
+#service section.wrapper div.bottom div.card{
+margin-bottom: 48px;
+font-size: 22px;
+
+
+}
+#service section.wrapper div.bottom div.card h3{
+	font-size: 22px;
+	font-weight: 700;
+	margin-bottom: 24px;
+	display: flex;
+	align-items: center;
+
+
+}
+#service section.wrapper div.bottom div.card h3 span{
+	margin-right: 16px;
+	padding: 8px;
+	background: var(--main-bg-color);
+	color: #fff;
+	border-radius: 4px;
+	font-size: 18px;
+
+}
+#service section.wrapper div.bottom div.card p{
+font-size: 18px;
+margin-bottom: 32px;
+width: 35%;
+
+}
+#service section.wrapper div.bottom div.card a{
+	padding: 8px 16px;
+	border: 2px solid var(--main-heading-color);
+	border-radius: 24px;
+
+}
+#service section.wrapper div.border{
+	margin-top: 100px;
+	margin-left: 80px;
+	border-bottom: 1px solid black;
+	width: 87%;
+}
+section#friends{}
+section#friends section.wrapper{}
+section#friends section.wrapper div.imgcontent{
+	position: relative;
+	margin-top: 100px;
+	margin-bottom: 200px;
+	display: flex;
+	justify-content: space-between;
+	margin-right: 220px;
+	margin-left: 220px;
+}
+section#friends section.wrapper div.imgcontent a img{
+	border-radius: 50px;
+}
+section#friends section.wrapper div.imgcontent a.one img{
+	position: absolute;
+
+}
+section#friends section.wrapper div.imgcontent a.two img{
+	position: absolute;
+	bottom: 15px;
+}	
+section#friends section.wrapper div.imgcontent a.three img{
+	position: absolute;
+}
+section#friends section.wrapper div.imgcontent a.four img{
+	position: absolute;
+	bottom: 15px;
+}
+section#friends section.wrapper div.text{
+	text-align: center;
+}
+section#friends section.wrapper div.text h1{
+	margin-bottom: 50px;
+	font-weight: bold;
+	font-size: 50px;
+
+}
+section#friends section.wrapper div.text p{
+	margin-bottom: 100px;
+	font-weight: bold;
+	color: gray;
+}
+section#friends section.wrapper div.border{
+	margin: 100px;
+	border-bottom: 1px solid black;
+	width: 35%;
+	margin-left: 370px;
+}
+
+#jeramy{}
+#jeramy .wrapper{}
+#jeramy .wrapper .top{
+	text-align: center;
+}
+#jeramy .wrapper .top h3{
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 70px;
+}
+#jeramy .wrapper .top img{
+	height: 130px;
+	width: 130px;
+	border-radius: 50%;
+	margin-bottom: 30px;
+}
+#jeramy .wrapper .top button{
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+#jeramy .wrapper .top button.bath{
+	color: gray;
+}
+#jeramy .wrapper .border{
+	margin: 60px;
+	margin-left: 170px;
+	border-bottom: 1px solid black;
+	width: 70%;
+
+}
+
+
+#strong{}
+#strong .wrapper{}
+#strong .wrapper .top{
+	text-align: center;
+}
+#strong .wrapper .top img{
+	margin-top: 70px;
+	margin-bottom: 40px;
+	width: 400px;
+	height: 300px;
+}
+#strong .wrapper .top p{
+	color: gray;
+	margin-bottom: 40px;
+}
+#strong .wrapper .top button{
+	color: #fff;
+	font-weight: bold;
+	margin-bottom: 70px;
+	padding: 13px 30px;
+	background-color: #23D3D3;
+	border-radius: 5px;
+}
+
+#asked{
+	background-color: #C0CCDA;
+}
+#asked .wrapper{}
+#asked .wrapper .top{}
+#asked .wrapper .top h3{
+	margin-left: 150px;
+	padding-top: 100px;
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+#asked .wrapper .center{}
+#asked .wrapper .center .rent{
+	display: flex;
+	justify-content: space-between;
+	padding-right: 110px;
+	padding-left: 110px;
+}
+#asked .wrapper .center .rent .one{
+	color: #23D3D3;
+}
+#asked .wrapper .center .rent .one button{
+	color: #23D3D3;
+}
+#asked .wrapper .center .rent .two{
+	color: gray;
+}
+#asked .wrapper .center .rent .two button{
+	color: gray;
+}
+#asked .wrapper .center .rent .three{
+	color: gray;
+}
+#asked .wrapper .center .rent .three button{
+	color: gray;
+}
+#asked .wrapper .center .rent button{
+	margin-top: 7px;
+}
+#asked .wrapper .center .rent .one p.one{
+	margin-bottom: 10px;
+	color: gray;
+}
+#asked .wrapper .center .rent .two p.one{
+	color: gray;
+	margin-bottom: 63px;
+}
+#asked .wrapper .center .rent .three p.one{
+	color: gray;
+	margin-bottom: 37px;
+}
+
+#asked .wrapper .center .rent h3{
+	color: black;
+	font-weight: bold;
+	margin-top: 40px;
+	margin-bottom: 15px;
+}
+#asked .wrapper .center .rent .one button.two{
+	color: gray;
+}
+#asked .wrapper .center .rent .one button.three{
+	margin-top: 132px;
+	color: gray;
+}
+#asked .wrapper .center .rent .two button.three{
+	margin-bottom: -50px;
+}
+#asked .wrapper .center .rent .three button.three{
+	margin-top: 31px;
+}
+
+#see{
+	background-color: #C0CCDA;
+}
+#see .wrapper .continer{
+	padding-left: 110px;
+	padding-right: 110px;
+	display: flex;
+	justify-content: space-between;
+}
+#see .wrapper .continer .left{}
+#see .wrapper .continer .center{
+	margin-top: 200px;
+	margin-right: 50px;
+}
+#see .wrapper .continer .right{
+	margin-left: 90px;
+	margin-top: 200px;
+}
+#see .wrapper .line{
+	margin-left: 100px;
+	border-bottom: 1px solid gray;
+	width: 80%;
+}
+#see .wrapper .continer a{
+	color: #23D3D3;
+}
+#as{
+	background-color: #C0CCDA;
+}
+#as .wrapper{
+	display: flex;
+}
+#as .wrapper .left h3{
+	font-size: 20px;
+	font-weight: bold;
+	padding-top: 205px;
+	padding-bottom: 205px;
+	padding-left: 100px;
+}
+#as .wrapper .right{
+	
+}
+#as .wrapper .right{
+
+}
+#as .wrapper .right ul{
+	margin-top: 90px;
+	margin-left: 70px;
+	display: flex;
+	flex-wrap: wrap;
+}
+#as .wrapper .right ul img{
+	border-radius: 50%;
+}
+
+
+#as .wrapper .right ul li{
+	display: flex;
+	margin-bottom: 70px;
+	width: 30%;
+}
+#as .wrapper .right ul li p{
+	margin-top: 40px;
+	margin-left: 15px;
+}
+#as .wrapper .right ul li:nth-child(4){
+	margin-left: 130px;
+}
+#as .wrapper .right ul li p:nth-child(4){
+	margin-bottom: -40px;
+}
+
+
+#join{
+	background-color: #23D3D3;
+}
+#join .wrapper{}
+#join .wrapper .top{
+	text-align: center;
+	margin-bottom: 150px;
+}
+#join .wrapper .top h1{
+	font-size: 30px;
+	font-weight: bold;
+	padding-top: 110px;
+	margin-bottom: 40px;
+}
+#join .wrapper .top button a{
+	color: #23D3D3;
+	padding: 15px 36px;
+	background-color: #fff;
+	border-radius: 5px;
+}
+#join .wrapper .bottom{
+	margin-left: 50px;
+	margin-right: 50px;
+	padding-bottom: 100px;
+	display: flex;
+	justify-content: space-between;
+}
+#join .wrapper .bottom .text{
+	display: flex;
+}
+#join .wrapper .bottom .text img{
+	height: 20px;
+	width: 20px;
+	margin-right: 20px;
+}
+
+
+#welcome{
+	background-color: #1C2C40;
+}
+#welcome .wrapper{}
+#welcome .wrapper .top{
+	padding-top: 100px;
+	display: flex;
+	justify-content: space-between;
+}
+#welcome .wrapper .top h3{
+	color: #fff;
+	margin-bottom: 25px;
+}
+#welcome .wrapper .top img{
+	margin-right: 5px;
+	width: 25px;
+	height: 22px
+	
+}
+#welcome .wrapper .top h1{
+	font-size: 25px;
+	font-weight: bold;
+	color: #fff;
+	margin-bottom: 30px;
+}
+#welcome .wrapper .top p{
+	font-size: 14px;
+	margin-top: 10px;
+	color: #C0CCDA;
+	margin-bottom: 5px;
+}
+
+#welcome .wrapper .top form{
+	padding: 19px 100px;
+	margin-top: 25px;
+	position: relative;
+	background-color: #223449;
+	border: 1px solid #243447;
+	border-radius: 5px;
+}
+#welcome .wrapper .top form input{
+	position: absolute;
+	right: 48px;
+	bottom: 12px;
+
+}
+#welcome .wrapper .top form img{
+	position: absolute;
+	right: 3px;
+	bottom: 10px;
+	transform: rotate(270deg);
+	width: 13px;
+	height: 15px;
+}
+
+#welcome .wrapper .bottom{
+	margin-top: 100px;
+	padding-bottom: 100px;
+	display: flex;
+	justify-content: space-between;
+}
+#welcome .wrapper .bottom .left p{
+	font-size: 15px;
+	color: #C0CCDA;
+}
+#welcome .wrapper .bottom .left p span a{
+	color: #23D3D3;
+}
+#welcome .wrapper .bottom .right img{
+	padding-right: 20px;
+	height: 35px;
+	width: 35px;
+}
+#white{
+	height: 500px;
+}
